@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7f3">
+  <meta name="description" content="You're invited to a very special birthday celebration!">
+  <title>You're Invited! | Birthday Celebration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="premium.css">
+</head>
+<body>
+  <div id="loader"><div><span>&#10022;</span><p>You're invited&hellip;</p></div></div>
+  <div id="progress"></div>
+  <div class="confetti confetti-one" aria-hidden="true"></div>
+  <div class="confetti confetti-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Birthday home">A little celebration <span>✦</span></a>
+    <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">♫ <span>Music off</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-card">
+        <p class="eyebrow">A little joy, a lot of love</p>
+        <div class="hero-photo-wrap">
+          <img src="assets/header_pic.jpeg" alt="Birthday invitation artwork" class="hero-photo">
+        </div>
+        <h1>You're invited to<br><em>a special day!</em></h1>
+        <p class="hero-copy">Come celebrate, smile, play, and make a beautiful memory with us.</p>
+        <a class="button button-primary" href="#invitation">Open the invitation <span aria-hidden="true">↓</span></a>
+        <div class="scroll-note">Scroll to explore</div>
+      </div>
+      <span class="floaty star star-a">✦</span><span class="floaty star star-b">✧</span>
+      <span class="floaty balloon balloon-a"></span><span class="floaty balloon balloon-b"></span>
+    </section>
+
+    <section class="section invitation-section" id="invitation">
+      <div class="section-heading">
+        <p class="eyebrow">The big day</p>
+        <h2>A celebration awaits</h2>
+        <p>All the details you need to join us.</p>
+      </div>
+      <div class="invite-layout">
+        <div class="invite-art">
+          <img src="assets/invitation.png" alt="Full birthday invitation">
+        </div>
+        <div class="event-details">
+          <div class="detail"><span class="detail-icon">♡</span><div><small>Celebrating</small><strong>Our little star</strong></div></div>
+          <div class="detail"><span class="detail-icon">▦</span><div><small>Date</small><strong>Monday, 12 October 2026</strong></div></div>
+          <div class="detail"><span class="detail-icon">◷</span><div><small>Time</small><strong>7:00 PM</strong></div></div>
+          <div class="detail"><span class="detail-icon">⌖</span><div><small>Venue</small><strong>Mayur Banquet</strong><p>Mithapur Service Lane, on Mumbai Expressway</p></div></div>
+          <a class="button button-secondary" href="#location">See the map</a>
+          <a class="button button-secondary" href="#rsvp">Let us know you're coming</a>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section" id="location">
+      <div class="section-heading">
+        <p class="eyebrow">Find us</p>
+        <h2>How to get there</h2>
+        <p>Mayur Banquet, Mithapur Service Lane, on Mumbai Expressway</p>
+      </div>
+      <div class="map-card">
+        <iframe title="Venue location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Mayur+Banquet+Mithapur+Service+Lane+Badarpur+New+Delhi&z=15&output=embed"></iframe>
+        <div class="map-actions">
+          <a class="button button-primary" target="_blank" rel="noopener" href="https://maps.app.goo.gl/zPFKBwqrcE7DCRni9">Open in Google Maps</a>
+          <button class="button button-secondary" id="addCal" type="button">Add to calendar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section premium-gallery-section" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">Little moments, big memories</p>
+        <h2>A Journey in Pictures</h2>
+        <p>Tap a photo to see it full size.</p>
+      </div>
+      <div class="carousel" id="carousel">
+        <button class="c-nav prev" aria-label="Previous">&lsaquo;</button>
+        <button class="c-nav next" aria-label="Next">&rsaquo;</button>
+      </div>
+      <div class="c-meta"><span id="cCap"></span><span id="cCount"></span></div>
+      <div class="c-bar"><i id="cBar"></i></div>
+      <div class="gallery-tabs" id="galleryTabs">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="photos">Photos</button>
+        <button class="tab-btn" data-filter="videos">Videos</button>
+      </div>
+      <div class="masonry-grid" id="masonryGrid"></div>
+    </section>
+
+    <!-- New Timeline Content Section -->
+    <section class="section timeline-section" id="milestones">
+      <div class="section-heading">
+        <p class="eyebrow">The Story So Far</p>
+        <h2>Unforgettable Milestones</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>The First Step</h3>
+            <p>A small step for tiny feet, a giant leap for our hearts.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>First Words</h3>
+            <p>Filling our home with endless chatter and joy.</p>
+          </div>
+        </div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>First Birthday Wish</h3><p>Candles, cake and a room full of love.</p></div></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-content"><h3>Today</h3><p>Another year of laughter &mdash; and you're invited.</p></div></div>
+      </div>
+    </section>
+
+  
+  <div class="lightbox" id="mediaLightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <div class="lightbox-content" id="lightboxContainer"></div>
+  </div>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="section-heading">
+        <p class="eyebrow">Desi trivia</p>
+        <h2>How well do you know India?</h2>
+        <p>Six quick questions on festivals, food and culture.</p>
+      </div>
+      <div class="quiz-card">
+        <div class="quiz-progress"><span id="quizProgress">Question 1 of 3</span><span id="quizScore">0 correct</span></div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <h3 id="quizQuestion">What should we bring to a birthday party?</h3>
+        <div class="quiz-options" id="quizOptions">
+          <button type="button" class="quiz-option" data-answer="cake">A cake</button>
+          <button type="button" class="quiz-option" data-answer="umbrella">An umbrella</button>
+          <button type="button" class="quiz-option" data-answer="passport">A passport</button>
+        </div>
+        <p class="quiz-feedback" id="quizFeedback" aria-live="polite">Choose an answer to play.</p>
+        <button class="button button-secondary hidden" id="nextQuestion" type="button">Next question →</button>
+        <button class="text-button hidden" id="restartQuiz" type="button">Play again</button>
+      </div>
+    </section>
+
+    <section class="section game-section" id="game">
+      <div class="section-heading">
+        <p class="eyebrow">Khel time</p>
+        <h2>Match the Indian icons</h2>
+        <p>Flip the cards and find all 6 pairs in the fewest moves.</p>
+      </div>
+      <div class="game-card">
+        <div class="game-top"><span id="memMoves">Moves: 0</span><span id="memTime">0:00</span><span id="memBest"></span><button class="text-button" id="resetGame" type="button">Shuffle</button></div>
+        <div class="mem-board" id="memBoard"></div>
+        <p class="game-message" id="gameMessage" aria-live="polite">Tap a card to begin!</p>
+      </div>
+    </section>
+
+    <section class="section rsvp-section" id="rsvp">
+      <div class="section-heading">
+        <p class="eyebrow">Save your spot</p>
+        <h2>Will you join the fun?</h2>
+        <p>Let us know so we can celebrate together.</p>
+      </div>
+      <form class="rsvp-form" id="rsvpForm">
+        <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Your name<input name="name" type="text" placeholder="e.g. Rahul Sharma" required maxlength="80"></label>
+        <label>Will you be joining us?
+          <select name="attending" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes, I'll be there!</option>
+            <option value="No">Sorry, can't make it</option>
+          </select>
+        </label>
+        <label>Number of guests (including you)<input name="guests" type="number" min="0" max="20" value="1" required></label>
+        <label>A birthday message <span class="optional">(optional)</span><textarea name="message" rows="3" maxlength="500" placeholder="Leave a little love..."></textarea></label>
+        <button class="button button-primary submit-button" type="submit">Send my RSVP <span>♡</span></button>
+        <p class="form-status" id="formStatus" aria-live="polite">Your reply goes straight to the host.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-sparkle">✦</div>
+    <p>Made with love for a very special little star.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+  <script src="premium.js"></script>
+</body>
+</html>
