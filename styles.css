@@ -155,8 +155,8 @@
 }
 
 div#galleryTabs {
-    display: none;
+    display: none !important;
 }
 div#masonryGrid {
-    display: none;
+    display: none!important;
 }
