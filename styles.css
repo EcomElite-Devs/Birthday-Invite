@@ -153,3 +153,10 @@
   cursor: pointer;
   z-index: 101;
 }
+
+div#galleryTabs {
+    display: none;
+}
+div#masonryGrid {
+    display: none;
+}
